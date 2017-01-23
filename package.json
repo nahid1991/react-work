@@ -1,0 +1,22 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "Simple react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahid1991/react-work.git"
+  },
+  "author": "Nahid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nahid1991/react-work/issues"
+  },
+  "homepage": "https://github.com/nahid1991/react-work#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
