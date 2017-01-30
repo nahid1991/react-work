@@ -44,8 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 	var Greeter = __webpack_require__(178);
@@ -21492,8 +21490,6 @@
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
 	var React = __webpack_require__(1);
 	var GreeterMessage = __webpack_require__(179);
 	var GreeterForm = __webpack_require__(180);
@@ -21501,25 +21497,25 @@
 	var Greeter = React.createClass({
 	  displayName: 'Greeter',
 
-	  getDefaultProps: function getDefaultProps() {
+	  getDefaultProps: function () {
 	    return {
 	      name: 'React',
 	      message: 'This is the default message'
 	    };
 	  },
 
-	  handleNewData: function handleNewData(updates) {
+	  handleNewData: function (updates) {
 	    this.setState(updates);
 	  },
 
-	  getInitialState: function getInitialState() {
+	  getInitialState: function () {
 	    return {
 	      name: this.props.name,
 	      message: this.props.message
 	    };
 	  },
 
-	  render: function render() {
+	  render: function () {
 	    var name = this.state.name;
 	    var message = this.state.message;
 	    return React.createElement(
@@ -21537,14 +21533,12 @@
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
 	var React = __webpack_require__(1);
 
 	var GreeterMessage = React.createClass({
 	  displayName: 'GreeterMessage',
 
-	  render: function render() {
+	  render: function () {
 	    var name = this.props.name;
 	    var message = this.props.message;
 	    return React.createElement(
@@ -21571,14 +21565,12 @@
 /* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
 	var React = __webpack_require__(1);
 
 	var GreeterForm = React.createClass({
 	  displayName: 'GreeterForm',
 
-	  onFormSubmit: function onFormSubmit(e) {
+	  onFormSubmit: function (e) {
 	    e.preventDefault();
 
 	    var updates = {};
@@ -21597,7 +21589,7 @@
 
 	    this.props.onNewData(updates);
 	  },
-	  render: function render() {
+	  render: function () {
 	    return React.createElement(
 	      'form',
 	      { onSubmit: this.onFormSubmit },
